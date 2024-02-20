@@ -2,7 +2,7 @@
  * The "calcy" class performs basic arithmetic operations such as addition, subtraction,
  * multiplication, and division on two floating-point numbers.
  */
-class calcy{
+class calcy extends Extended_Calculator{
     float addition(float operand_1,float operand_2){
         return(operand_1+operand_2);
     }
@@ -24,12 +24,7 @@ class calcy{
     float division(float operand_1,float operand_2){
         return(operand_1/operand_2);
     }
-    int square(int number){
-        return number*number;
-    }
-    int cube(int number){
-        return number*number*number;
-    }
+    
 
     
     
@@ -50,12 +45,12 @@ class calcy{
 
         float div_result=c.division(operand_1,operand_2);
         System.out.println("Result of Division is:"+div_result);
-        int number=5;
-        int sqr_result=c.square(number);
-        System.out.println("Square of number:"+sqr_result);
-        int cube_result=c.cube(number);
-        System.out.println("cube of a number is:"+cube_result);
         
+        
+        float result_1=c.square(operand_1);
+        System.out.println("Square of number:"+result_1);
+        float result_2=c.cube(operand_1);
+        System.out.println("Cube of number:"+result_1);
 
 
 
